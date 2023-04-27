@@ -9,3 +9,6 @@
 .trashImage {
   height: 3vh;
 }
+
+@media (min-width: 368px) and (max-width: 991px) {
+}
