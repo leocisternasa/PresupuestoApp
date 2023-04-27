@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": ".eslintrc.json"
+  },
+  "eslint.run": "onSave",
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
