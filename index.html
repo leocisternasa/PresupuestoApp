@@ -26,6 +26,8 @@
               id="inputPresupuesto"
               type="number"
               class="bg-success-subtle rounded border border-dark-subtle"
+              required
+              min="0"
             />
             <button
               href="#"
@@ -43,12 +45,15 @@
               id="inputNombreGasto"
               type="text"
               class="bg-danger-subtle rounded border border-dark-subtle"
+              required
             />
             <h5 class="card-title mb-3 mt-3">Ingresa La Cantidad Del Gasto</h5>
             <input
               id="montoGasto"
               type="number"
               class="bg-danger-subtle rounded border border-dark-subtle"
+              required
+              min="0"
             />
             <button
               onclick="agregarGasto()"
