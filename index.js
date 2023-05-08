@@ -10,9 +10,10 @@ function generateUniqueId() {
 function agregarPresupuesto() {
   let presupuesto = document.getElementById('inputPresupuesto');
   montoPresupuesto = parseInt(presupuesto.value);
-  if (montoPresupuesto < 0) {
-    alert('Tu monto inicial debe seer positivo, pida un prestamo');
+  if (montoPresupuesto < 0 || isNaN(montoPresupuesto)) {
+    alert('Tu monto inicial debe ser positivo, pida un prestamo');
   } else {
+    console.log(montoPresupuesto);
     let html = `<div>$ ${montoPresupuesto.toLocaleString('es-ES')}</div>`;
     document.getElementById('montoPresupuesto').innerHTML = html;
     document.getElementById('inputPresupuesto').value = '';
